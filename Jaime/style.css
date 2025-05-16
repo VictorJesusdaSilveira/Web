@@ -1,0 +1,69 @@
+*{
+    min-height: 150px;
+    margin: 0 auto;
+
+}*
+
+body{
+    background-color: 222831
+}
+
+header{
+    width: 100%;
+    height: 500px;
+
+}
+
+main{
+    width: 100%;
+    height: 500px;
+
+}
+
+footer{
+    width: 100%;
+    height: 500px;
+}
+
+.nome{
+    border: solid 4px;
+    margin: 0 auto;
+    float: left;
+}
+
+
+.perfil{
+    border: solid 1px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+h1{
+    color: rgb(140, 76, 8);
+
+}
+
+h2{
+    color: rgb(140, 76, 8);
+
+}
+
+.imagem{
+    height: 250px;
+    width: 100%;
+
+    
+    
+    
+}
+
+.section{
+    margin-top: 0px;
+    padding-bottom: 5px;
+    border-top: solid 1px gray
+
+}
+
+ol li{
+    list-style: inside;
+}
