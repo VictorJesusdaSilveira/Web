@@ -1,0 +1,64 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    height: 150px;
+    width: 100%;
+    background-color: darkred;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.conteiner {
+    width: 1200px;
+    margin: 0 auto;
+    border: solid 1px;
+    display: flex;
+    
+    
+}
+
+.conteudo{
+    min-height: calc(100vh - 150px - 200px);
+    background-color: #DDDDDD;  
+}
+
+
+.conteudo .menu {
+    position: relative;
+    float: left;
+    width: 25%;
+    min-height: calc(100vh - 200px - 150px);
+    background-color: hotpink;
+    padding: 15px;
+}
+
+
+.conteudo .artigo {
+    position: relative;
+    float: left;
+    width: 75%;
+    padding: 15px;
+}
+
+.rodape {
+    height: 200px;
+    background-color: purple;
+}
+
+.botao-topo{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 50%;
+    text-align: center;
+
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}

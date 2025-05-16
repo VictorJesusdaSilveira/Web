@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.caixa {
+    height: 200px;  
+    width: 50%;
+    background-color: darkred;
+
+    float: left;
+    margin-top: 20px;
+}
+
+.caixa2 {
+    height: 200px;
+    width: 50%;
+    background-color: darkgreen;
+    float: left;
+    position: relative;
+}
+
+.caixa3 {
+    height: 100px;
+    width: 100px;
+    background-color: purple;  
+    float: left;
+    position: absolute;
+    bottom: -20px;
+    left: 10px;
+    z-index: -1;
+    
+}
