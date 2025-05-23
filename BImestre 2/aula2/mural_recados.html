@@ -1,0 +1,57 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mural</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js">defer</script>
+</head>
+<body>
+    <form action="" method="get">
+
+        <input type="text" name="autor" value="Victor" placeholder="Informe o seu nome...">
+        <br>
+
+        <div>   
+            <label for="">Personagem:</label>
+            <br>
+            <input type="radio" checked value="zoro" name="campo_personagem"> Zoro <br>
+            <input type="radio" value="venom" name="campo_personagem"> Venom <br>
+            <input type="radio" value="hiei" name="campo_personagem"> Hiei <br>
+
+        </div>
+
+        <div>
+            <label for="">Habilidades:</label>
+            <br>
+            <input type="checkbox" value="JavaScript" name="campo_habilidades"> JavaScript <br>
+            <input type="checkbox" value="HTML" name="campo_habilidades"> HTML <br>
+            <input type="checkbox" value="PY" name="campo_habilidades"> PY <br>
+
+
+        </div>
+
+        <div>
+            <select name="campor_cor_fav" id="" required>
+                <option value="" selected disabled>escolha uma cor...</option>
+                <option value="verde">verde</option>
+                <option value="preto">preto</option>
+                <option value="vermelho">vermelho</option>
+            </select>
+
+        </div>
+
+        <label for="">Recado</label>
+        <textarea rows="4" cols="50" name="mensagem"></textarea>
+
+        <br>
+
+        <input type="submit" value="enviar">
+    </form>
+
+    <script>
+        new FroalaEditor('textarea')
+    </script>
+</body>
+</html>
