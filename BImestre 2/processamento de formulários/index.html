@@ -1,0 +1,81 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css" rel="stylesheet"
+    type="text/css" />
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
+    <script src="script.js" defer></script>
+    
+<body>
+    <form action="/submit" method="Post">
+        <h3>Cadastre-se</h3>
+
+        <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Nome Completo..." required>
+        </div>
+        <div class="form-group">
+            <label for="data_nascimento">Data de Nascimento:</label>
+            <input type="date" id="data_nascimento" nome="data_nascimento" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="@gmail.com" placeholder="Escreva o seu E-mail" required>
+        </div>
+        <div class="form-group">
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" value="()" placeholder="(xx) xxxxx-xxxx" maxlength="14" required>
+        </div>
+        <div class="form-group">
+            <label for="cpf">CPF:</label>
+            <input type="number" id="cpf" name="CPF" placeholder="Escreva o seu CPF" maxlength="11" required>
+        </div>
+        <div class="form-group">
+            <label for="genero">Gênero</label>
+            <select name="genero" id="genero" required>
+                <option value="" disabled selected hidden>Selecione uma opção</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+                <option value="Outro">Outro</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="habilidades">Habilidades:</label>
+            <label for="html">
+                <input type="checkbox" id="html" name="Habilidades" value="HTML">HTML
+            </label>
+            <label for="css">
+                <input type="checkbox" id="css" name="Habilidades" value="CSS">CSS
+            </label>
+            <label for="js">
+                <input type="checkbox" id="js" name="Habilidades" value="JS">JavaScript
+            </label>
+        </div>
+        <div class="form-group"> 
+            <label for="pais">País:</label>
+            <select name="pais" id="pais" required>
+                <option value="" disabled selected hidden>Selecione um País</option>
+                <option value="br">Brasil</option>
+                <option value="br">França</option>
+                <option value="br">Japão</option>
+                <option value="br">Alemanha</option>
+                <option value="br">Ucrânia</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="comentarios">Comentários:</label>
+            <textarea name="comentarios" id="comentarios"></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+<script>
+    new FroalaEditor("textarea");
+</script>
+</body>
+</html>
